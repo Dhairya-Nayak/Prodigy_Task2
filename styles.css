@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f52929;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+    background: rgb(103, 18, 18);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.stopwatch.expanded {
+    width: 300px; /* Expanded width */
+    height: 300px; /* Expanded height */
+    padding: 40px; /* Extra padding for expanded view */
+}
+
+#display {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #fff; /* White text for better visibility */
+}
+
+.buttons button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for button states */
+}
+
+#startStop {
+    background-color: #63d066; /* Green for Start */
+    color: rgb(135, 87, 87);
+}
+
+#startStop:hover,
+#startStop:focus {
+    background-color: #4caf50; /* Darker green on hover/focus */
+    color: #fff; /* White text on hover/focus */
+}
+
+#reset {
+    background-color: #f44336; /* Red for Reset */
+    color: white;
+}
+
+#reset:hover,
+#reset:focus {
+    background-color: #d32f2f; /* Darker red on hover/focus */
+    color: #fff; /* White text on hover/focus */
+}
